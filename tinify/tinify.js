@@ -33,8 +33,8 @@ const fromDir = (inDir, outDir, _files = []) => {
 }
 
 const rootDir = fs.realpathSync(process.cwd());
-const screenshotDir = path.resolve(rootDir, './screenshotin');
-const screenshotOutDir = path.resolve(rootDir, './screenshot');
+const screenshotDir = path.resolve(rootDir, './imagein');
+const screenshotOutDir = path.resolve(rootDir, './imageout');
 
 const files = fromDir(screenshotDir, screenshotOutDir);
 
